@@ -2,87 +2,166 @@
 <html>
 <head>
     <title>My Profile</title>
-</head>
-<body style="background-color: #f5f5f5;">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    <header style="text-align: center; background-color: rgb(195, 188, 180); padding:18px;">
+        header {
+            text-align: center;
+            background-color: rgb(195, 188, 180);
+            padding: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        table {
+            width: 45%;
+            border-collapse: collapse;
+            margin-right: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        audio, video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(195, 188, 180);
+        }
+
+        a {
+            text-decoration: none;
+            color: #0074D9;
+            font-size: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
         <h1>My Profile</h1>
     </header>
 
-    <div class="container" style="max-width: 900px; margin: 0 auto; padding: 20px; background-color: #fff;">
-        <h2 style="text-align: center;">Personal Details</h2>
+    <div class="container">
+        <h2>Personal Details</h2>
         
         <!--Personal Details-->
-        <section style="display:flex; justify-content : space-evenly; align-items: center; margin-bottom: 20px;">
-            <img src="photo.jpg" alt="Profile Picture" style="border-radius: 50%; height: 200%; width: 200px;">
-            <ul style="list-style: none; padding: 0; font-size: 20px;">
-                <li><strong>Name:</strong> Himanshu Menghani </li>
-                <li><strong>Age:</strong> 19 </li>
-                <li><strong>Mail-Id:</strong> <a href="mailto:2021.himanshu.menghani@ves.ac.in"> 2021.himanshu.menghani@ves.ac.in </a> 
+        <section>
+            <img src="photo.jpg" alt="Profile Picture">
+            <ul>
+                <li><strong>Name:</strong> Himanshu Menghani</li>
+                <li><strong>Age:</strong> 19</li>
+                <li><strong>Mail-Id:</strong> <a href="mailto:2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a></li>
                 <li><strong>Location:</strong> Ulhasnagar, Maharashtra</li>
             </ul>
         </section>
 
         <!--Skill Sets-->
-        <h2 style="text-align: center;">Skills Set</h2>
-        <section style="display: flex; justify-content: space-around; padding: 10px;">
-        <table style="width: 45%; border-collapse: collapse; margin-right: 10px;">
-        <tr>
-            <td colspan="2" style="padding: 10px; border: 1px solid black; text-align:center;"><strong><em>Frontend Skills</em></strong></td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid black;">HTML</td>
-            <td style="padding: 10px; border: 1px solid black;">CSS</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid black;">JavaScript</td>
-            <td style="padding: 10px; border: 1px solid black;">React</td>
-        </tr>
-    </table>
-
-    <table style="width: 45%; border-collapse: collapse;">
-        <tr>
-            <td colspan="2" style="padding: 10px; border: 1px solid black;text-align:center;"><Strong><em>Backend Skills</em></Strong></td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid black;">MySQL,Mongodb</td>
-            <td style="padding: 10px; border: 1px solid black;">Python</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid black;">Java</td>
-            <td style="padding: 10px; border: 1px solid black;">Node.js</td>
-        </tr>
-    </table>
-</section>
-
-
-         <!--Audio-->
+        <h2>Skill Set</h2>
         <section>
-            <h2 style="text-align: center;">Audio</h2>
+            <!-- Frontend Skills -->
+            <table>
+                <tr>
+                    <td colspan="2"><strong><em>Frontend Skills</em></strong></td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>React</td>
+                </tr>
+            </table>
+
+            <!-- Backend Skills -->
+            <table>
+                <tr>
+                    <td colspan="2"><strong><em>Backend Skills</em></strong></td>
+                </tr>
+                <tr>
+                    <td>MySQL, MongoDB</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Node.js</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Audio -->
+        <section>
+            <h2>Audio</h2>
             <audio controls src="himanshu_audio.mp3"></audio>
         </section>
 
-
-         <!--Video-->
+        <!-- Video -->
         <section>
-            <h2 style="text-align: center;">Video</h2>
-            <video controls src="intro.mp4" style="height: 100%; width: 50%;"></video>
+            <h2>Video</h2>
+            <video controls src="intro.mp4"></video>
         </section>
 
-         <!--Social Media-->
+        <!-- Social Media -->
         <section>
-            <h2 style="text-align: center;">Social Media</h2>
-            <div style="display: flex; justify-content: space-around;">
-        <a href="https://in.linkedin.com/in/himanshu-menghani-926394182" style="text-decoration: none; color: #0074D9; font-size: 20px;">LinkedIn</a>
-        <a href="https://github.com/524himanshu" style="text-decoration: none; color: #0074D9; font-size: 20px;">GitHub</a>
+            <h2>Social Media</h2>
+            <div>
+                <a href="https://in.linkedin.com/in/himanshu-menghani-926394182">LinkedIn</a>
+                <a href="https://github.com/524himanshu">GitHub</a>
             </div>
         </section>
 
-     <!--Footer-->
-    <footer style="text-align: center; padding: 10px; background-color:rgb(195, 188, 180);">
-        <p> &copy;  2023 Profile Page. All rights reserved.</p>
-    </footer>
-
-
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Profile Page. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
