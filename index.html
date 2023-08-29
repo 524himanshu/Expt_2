@@ -1,167 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Profile</title>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            background-color: rgb(195, 188, 180);
-            padding: 18px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-        }
-
-        img {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            font-size: 20px;
-        }
-
-        table {
-            width: 45%;
-            border-collapse: collapse;
-            margin-right: 10px;
-        }
-
-        td {
-            padding: 10px;
-            border: 1px solid black;
-            text-align: center;
-        }
-
-        audio, video {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(195, 188, 180);
-        }
-
-        a {
-            text-decoration: none;
-            color: #0074D9;
-            font-size: 20px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
 </head>
 <body>
-
     <header>
-        <h1>My Profile</h1>
+        <h1 style="text-align: center; font-size: 36px; color: #336699; margin-bottom: 10px;">Himanshu Menghani</h1>
+        <p style="text-align: center; font-size: 18px; color: #666;">Tech Enthusiast</p>
     </header>
-
-    <div class="container">
-        <h2>Personal Details</h2>
-        
-        <!--Personal Details-->
+    <main>
         <section>
-            <img src="photo.jpg" alt="Profile Picture">
-            <ul>
-                <li><strong>Name:</strong> Himanshu Menghani</li>
-                <li><strong>Age:</strong> 19</li>
-                <li><strong>Mail-Id:</strong> <a href="mailto:2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a></li>
-                <li><strong>Location:</strong> Ulhasnagar, Maharashtra</li>
-            </ul>
-        </section>
-
-        <!--Skill Sets-->
-        <h2>Skill Set</h2>
-        <section>
-            <!-- Frontend Skills -->
-            <table>
-                <tr>
-                    <td colspan="2"><strong><em>Frontend Skills</em></strong></td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>CSS</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>React</td>
-                </tr>
-            </table>
-
-            <!-- Backend Skills -->
-            <table>
-                <tr>
-                    <td colspan="2"><strong><em>Backend Skills</em></strong></td>
-                </tr>
-                <tr>
-                    <td>MySQL, MongoDB</td>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>Node.js</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- Audio -->
-        <section>
-            <h2>Audio</h2>
-            <audio controls src="himanshu_audio.mp3"></audio>
-        </section>
-
-        <!-- Video -->
-        <section>
-            <h2>Video</h2>
-            <video controls src="intro.mp4"></video>
-        </section>
-
-        <!-- Social Media -->
-        <section>
-            <h2>Social Media</h2>
-            <div>
-                <a href="https://in.linkedin.com/in/himanshu-menghani-926394182">LinkedIn</a>
-                <a href="https://github.com/524himanshu">GitHub</a>
+            <h2 style="color: #336699; margin-bottom: 10px;">About Me</h2>
+            <div style="text-align: center;">
+                <img src="photo.jpg" alt="John Doe's Profile Photo" style="border-radius: 50%; width: 200px; height: 200px; margin-bottom: 10px;">
+            </div>
+            <p style="text-align: center;">Hello, I am Himanshu Menghani, a passionate Information Technology student with a keen interest in web development.</p>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <audio controls style="width: 80%;">
+                    <source src="himanshu_audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <video controls style="max-width: 80%;">
+                    <source src="intro.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
             </div>
         </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2023 Profile Page. All rights reserved.</p>
-        </footer>
-    </div>
+        <section>
+            <h2 style="color: #336699; margin-bottom: 10px;">Personal Details</h2>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <th style="text-align: left;">Name</th>
+                    <td>Himanshu Menghani Doe</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Age</th>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Email</th>
+                    <td><a href="2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Location</th>
+                    <td>Ulhasnagar, Maharashtra</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2 style="color: #336699; margin-bottom: 10px;">Skill Sets</h2>
+            <ul style="list-style-type: none; text-align: center; padding-left: 0;">
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">HTML</li>
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">CSS</li>
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">JavaScript</li>
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">Python</li>
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">React</li>
+                <li style="display: inline-block; margin: 5px 10px; background-color: #336699; color: #fff; padding: 5px 10px; border-radius: 5px;">Node.js</li>
+            </ul>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 20px;">
+        <p>Contact me at <a href="mailto:2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a></p>
+    </footer>
 </body>
 </html>
