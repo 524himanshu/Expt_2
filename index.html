@@ -1,97 +1,87 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-/* Apply a default font and style to the body */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #f5f5f5;
-}
+    <header>
+        <h1>My Profile</h1>
+    </header>
 
-/* Style the header */
-header {
-    text-align: center;
-    background-color: rgb(195, 188, 180);
-    padding: 18px;
-    border-radius: 10px;
-}
+    <div class="container">
+        <h2>Personal Details</h2>
+        
+        <!-- Personal Details -->
+        <section class="profile-section">
+            <img src="photo.jpg" alt="Profile Picture">
+            <ul>
+                <li><strong>Name:</strong> Himanshu Menghani</li>
+                <li><strong>Age:</strong> 19</li>
+                <li><strong>Mail-Id:</strong> <a href="mailto:2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a></li>
+                <li><strong>Location:</strong> Ulhasnagar, Maharashtra</li>
+            </ul>
+        </section>
 
-header h1 {
-    margin: 0;
-}
+        <!-- Skill Sets -->
+        <h2>Skills Set</h2>
+        <section class="profile-section">
+            <table class="skill-table">
+                <tr>
+                    <td colspan="2"><strong><em>Frontend Skills</em></strong></td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>React</td>
+                </tr>
+            </table>
 
-/* Style the container */
-.container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+            <table class="skill-table">
+                <tr>
+                    <td colspan="2"><strong><em>Backend Skills</em></strong></td>
+                </tr>
+                <tr>
+                    <td>MySQL, MongoDB</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Node.js</td>
+                </tr>
+            </table>
+        </section>
 
-/* Style personal details section */
-.container h2 {
-    text-align: center;
-    margin-top: 20px;
-}
+        <!-- Audio -->
+        <h2>Audio</h2>
+        <section class="profile-section">
+            <audio controls src="himanshu_audio.mp3"></audio>
+        </section>
 
-/* Style profile picture */
-.container img {
-    border-radius: 50%;
-    max-width: 200px;
-}
+        <!-- Video -->
+        <h2>Video</h2>
+        <section class="profile-section">
+            <video controls src="intro.mp4"></video>
+        </section>
 
-.container ul {
-    list-style: none;
-    padding: 0;
-    font-size: 20px;
-    margin-top: 10px;
-}
+        <!-- Social Media -->
+        <h2>Social Media</h2>
+        <section class="profile-section">
+            <div class="social-media">
+                <a href="https://in.linkedin.com/in/himanshu-menghani-926394182">LinkedIn</a>
+                <a href="https://github.com/524himanshu">GitHub</a>
+            </div>
+        </section>
+    </div>
 
-/* Style skill sets section */
-.skill-table {
-    width: 45%;
-    border-collapse: collapse;
-    margin-right: 10px;
-}
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Profile Page. All rights reserved.</p>
+    </footer>
 
-.skill-table td {
-    padding: 10px;
-    border: 1px solid black;
-    text-align: center;
-}
-
-/* Style audio and video sections */
-audio,
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Style social media links */
-.social-media {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: #0074D9;
-    font-size: 20px;
-}
-
-/* Style footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(195, 188, 180);
-    border-radius: 10px;
-    margin-top: 20px;
-}
+</body>
+</html>
