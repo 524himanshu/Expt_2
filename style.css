@@ -67,10 +67,9 @@ header h1 {
 }
 
 /* Style audio and video sections */
-audio,
-video {
-    width: 100%;
-    height: auto;
+.audio,video {
+    height: 100%; 
+    width: 50%;
     border-radius: 10px;
 }
 
