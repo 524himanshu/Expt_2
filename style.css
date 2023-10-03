@@ -1,0 +1,83 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a default font and style to the body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    background-color: rgb(195, 188, 180);
+    padding: 18px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Style personal details section */
+.container h2 {
+    text-align: center;
+}
+
+/* Style profile picture */
+.container img {
+    border-radius: 50%;
+    height: auto;
+    max-width: 200px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Style skill sets section */
+.container table {
+    width: 45%;
+    border-collapse: collapse;
+    margin-right: 10px;
+}
+
+.container td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Style audio and video sections */
+.container audio,
+.container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Style social media links */
+.container a {
+    text-decoration: none;
+    color: #0074D9;
+    font-size: 20px;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(195, 188, 180);
+}
